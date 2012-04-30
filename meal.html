@@ -3,6 +3,8 @@
 <html>
     <head>
     <title></title>
+    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0">
+    
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" /> -->
     <script type="text/javascript" src="js/scripts.js"></script>
@@ -13,7 +15,7 @@
 	<!-- page specific css/js -->
     <script type="text/javascript" src="js/meal.js"></script>
     <link rel="stylesheet" href="css/meal.css" />
-    	    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0">
+    
     	
 </head>
 
@@ -39,21 +41,26 @@
 	
 	<div id="progress">
 		<div>
-			<div class="progress-bar" id="lipids">
-			</div><span class="progress-type">lipids</span>
+			<div class="progress-container">
+				<div class="progress-bar" id="lipids">
+				</div>
+			</div>
+			<span class="progress-type">lipids</span>
 		</div>
-		<div>
-			<div class="progress-bar" id="carbo">
-			</div><span class="progress-type">carbo</span>
+		<div>	
+			<div class="progress-container">
+				<div class="progress-bar" id="carbo"></div>
+			</div>
+			<span class="progress-type">carbo</span>
+		</div>	
+			<div class="progress-container">
+				<div class="progress-bar" id="protein"></div>
+			</div>
+			<span class="progress-type">protein</span>
 		</div>
-		<div>
-			<div class="progress-bar" id="protein">
-			</div><span class="progress-type">proteins</span>
-		</div>
-	</div>
-	
+	</div>	
 </div>
-
+<!-- End Of meal -->
 
 <div class="list">
 <!-- left arrow -->
