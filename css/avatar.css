@@ -1,0 +1,75 @@
+.bubble{
+	-webkit-transition: all 0.2s ease-out 0s,display 0s 1s;
+	background-image: url(../resources/endent.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	width: 90%;
+	margin: auto;
+	border: 1px solid #333;
+	border-bottom: none;
+	border-radius: 5px;
+	background-size: auto;
+}
+
+.avatar-list li{
+	width: 95px;
+	height: 123px;
+	display:inline-block;
+	margin: 0px 5px 0px 5px;
+	border-image: url('../resources/border-image.png') 5 3 5 3 repeat stretch;
+}
+
+.tab{
+    width: 50px;
+    height: 40px;
+    border: solid 1px #333;
+    border-radius: 3px 3px 0px 0px;
+    margin:auto;
+    -webkit-transition: all 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.8s
+    }
+
+.tab-close{
+	opacity: 0;
+	width: 100%;
+	height: 50px;
+	background-image: url(../resources/arrowdown.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s;
+	background-size: 50px;
+	position: fixed;
+	bottom: 0px;
+}    
+
+.show-list .tab-close{
+	opacity: 1;
+	-webkit-transition: all 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.8s;
+}
+
+.avatars-page .list{
+    position:absolute;
+    top: 787px;
+    width: 480px;
+    -webkit-transition: all 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s;
+}
+
+.show-list.list{
+    top:-15px;
+    
+    }
+.avatar-list{
+    margin-top:0px;
+    padding-top:10px;
+    border-top:solid 1px #333;
+        background: url(../resources/bg.gif);
+    
+}
+
+#avatar{
+    width:90%;
+    height: 85%;
+    }
+    
+.list .avatar-text{
+    	display: none;
+    }

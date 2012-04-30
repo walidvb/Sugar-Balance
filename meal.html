@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" /> -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+     <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.mobiledragdrop.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+	<!-- page specific css/js -->
+    <script type="text/javascript" src="js/meal.js"></script>
+    <link rel="stylesheet" href="css/meal.css" />
+    	    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0">
+    	
+</head>
+
+<body> 
+
+<!-- Main section -->
+<div id="main">
+	<div class="title rotator">
+		<div class="meal">Meal</div>
+		<div class="breakfast"> Breakfast</div>
+	</div>
+	
+	<div id="plate">
+		<ul class="lipids">
+		</ul>
+		<ul class="protein">
+		</ul>
+		<ul class="carbo">
+		</ul>
+	
+	</div>
+	
+	
+	<div id="progress">
+		<div>
+			<div class="progress-bar" id="lipids">
+			</div><span class="progress-type">lipids</span>
+		</div>
+		<div>
+			<div class="progress-bar" id="carbo">
+			</div><span class="progress-type">carbo</span>
+		</div>
+		<div>
+			<div class="progress-bar" id="protein">
+			</div><span class="progress-type">proteins</span>
+		</div>
+	</div>
+	
+</div>
+
+
+<div class="list">
+<!-- left arrow -->
+<div id="left" class="arrow" data-dir="0"></div>
+
+<div id="item-container">
+	<ul class="item-list first-list current breakfast">
+		<li data-meal="breakfast" data-food="bread" data-category="lipids" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="breakfast" data-food="banana" data-category="carbo" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="breakfast" data-food="milk" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="breakfast" data-food="cookies" data-category="lipids" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="breakfast" data-food="eggs" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="breakfast" data-food="orange" data-category="" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="breakfast" data-food="tea" data-category="" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="breakfast" data-food="cherry" data-category="protein"></li>
+	</ul>
+	<ul class="item-list second-list meal">
+		<li data-meal="meal" data-food="bread" data-category="" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="meal" data-food="eggs" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="meal" data-food="burger" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="meal" data-food="milk" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
+		<li data-meal="meal" data-food="chicken" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
+
+	</ul>
+</div>
+<!-- right arrow -->
+<div id="right" class="arrow" data-dir="1"></div>
+</div>
+</div><!-- /page -->
+
+
+
+</body>
+</html>

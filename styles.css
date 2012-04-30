@@ -1,0 +1,19 @@
+*{
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+body{
+    height: 800px;
+    width: 480px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#main{
+    height: 700px;
+    padding-top: 10px;
+}
+
+
+/*------------Lists-------------*/
