@@ -12,7 +12,19 @@ $(document).ready(function(){
     	})
     });
     
-    //change meal
+    
+    
+    //		Change food type
+    
+    var $foodTab = $('.food-tab a');
+    var $foodPanels = $('.food-panels');
+   	$foodTab.click(function(){
+   		var target = $(this).data('target');
+   		$foodPanels.addClass('open');
+   		$('.item-list').hide();
+   		$('#' + target).show();
+   	});
+        //		change meal
     /*
     $plate.children("img").click(function(){
     	$(this).toggleClass("meal");
@@ -39,9 +51,9 @@ $(document).ready(function(){
 	};
 	
 	function removePlate(foodItem){
-				var meal = foodItem.data("meal");
+				var category = foodItem.data("category");
 				foodItem.removeClass('served');
-				$('.'+meal).append(foodItem);
+				$('#list-'+category).append(foodItem);
 				
 	};
 	
@@ -83,7 +95,6 @@ $(document).ready(function(){
 		var carboCol = (newCarbo > carboMax) ? tooMuch : stillGood;
 		var proteinCol = (newProtein > proteinMax) ? tooMuch : stillGood;	
 		
-		console.log(lipidsCol);
 		//Set changes!
 		lipidsProgress.css({
 			width: newLipids,

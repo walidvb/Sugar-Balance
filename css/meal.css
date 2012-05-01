@@ -7,52 +7,48 @@
 }
 
 #item-container{
-    width: 390px;
-    height: 60px;
+    width: 100%;
     overflow: hidden;
     display: inline-block;
 }
 
 .item-list{
-    display: inline-block;
-    width: 1000px;
+    display: none;
     -webkit-transition: all 1s ease-in-out 0s;
-    margin-top: 7px;
+
     padding: 0px;
+    margin: 0px;
 }
 
 .item-list li{
     display: inline-block;
     list-style: none;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+    width: 19%;
+    height: 89px;
+    border: 1px solid gray;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px gray;
 }
 
-
-.arrow{
-    width: 30px;
-    height: 30px;
-    background-size: cover;
+.food-tab{
     display: inline-block;
-	top: 15px;
-	border: solid 1px;
-	border-radius: 3px;
-	}
+    width: 30%;
+    text-align: center;    
+}
 
-#left{
-    background-image: url("../resources/arrowleft.png");
-	left: 5px;
+.food-panels{
+	height: 10px;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	border-top: 1px solid #333;
 }
-#right{
-    background-image: url("../resources/arrowright.png"); 
-	right: 0.9px;
+
+.open.food-panels{
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	height: auto;
 }
-	
-	
 /*--- plate ---*/
 #plate{
 	background-image: url("../img/food/plate.png");
@@ -90,8 +86,6 @@
 /*--- progress ---*/
 #progress{
     position: absolute;
-		
-	
     left: 0px;
     width: 70%;
     box-shadow: inset 0px 0px 8px black;
@@ -142,7 +136,7 @@
 	width: 100px;
 }
 
-.breakfast, .meal{
+.title .breakfast, .title .meal{
     position:absolute;
     -webkit-transition: -webkit-transform 1s , z-index 0s 0.25s;
    	background-color: rgba(255,255,255,1);
@@ -151,12 +145,12 @@
     
 }
 
-.breakfast, .rotated  .meal{
+.title .breakfast,.title  .rotated  .meal{
   z-index: -2;
   -webkit-transform: rotateX(180deg);   	    
 }
 
-.meal, .rotated .breakfast{
+.title  .meal,.title  .rotated .breakfast{
     z-index: -1;   
     -webkit-transform: rotateX(0deg);
     
