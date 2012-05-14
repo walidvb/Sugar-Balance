@@ -23,10 +23,7 @@ $(document).ready(function(){
 		$foodPanels.css({
 			'left': newPos+'%',
 		});   	
-   		/*var target = $(this).data('target');
-   		$foodPanels.addClass('open');
-   		$('.item-list').hide();
-   		$('#' + target).show();
+
    	*/
    	});
    	
@@ -48,7 +45,16 @@ $(document).ready(function(){
 	});
 	
 	
-	
+	$foodItem.tipsy({
+		live: true,
+		html: true,
+		gravity: 'n',
+		delayOut: 1000,
+		trigger: manual,
+		title: function(){
+				return 'asd';
+			},
+	});
 	
 	//				update plate
 	function addToPlate(foodItem, category){					
