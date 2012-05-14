@@ -16,14 +16,20 @@ $(document).ready(function(){
     
     //		Change food type
     
-    var $foodTab = $('.food-tab a');
+    var $foodTab = $('.food-tab');
     var $foodPanels = $('.food-panels');
    	$foodTab.click(function(){
-   		var target = $(this).data('target');
+   		var newPos = -($(this).index())*100;
+		$foodPanels.css({
+			'left': newPos+'%',
+		});   	
+   		/*var target = $(this).data('target');
    		$foodPanels.addClass('open');
    		$('.item-list').hide();
    		$('#' + target).show();
+   	*/
    	});
+   	
         //		change meal
     /*
     $plate.children("img").click(function(){

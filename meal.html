@@ -31,16 +31,69 @@
 		</div>
 		
 		<div id="plate">
-			<ul class="lipids">
+			<ul class="fruits">
 			</ul>
-			<ul class="protein">
+			<ul class="veggies">
 			</ul>
-			<ul class="carbo">
+			<ul class="drinks">
 			</ul>
 		
 		</div>
 		
 		
+	</div>
+	<!-- End Of main -->
+	
+	<div class="list">
+	<!-- left arrow -->
+		<div id="left" class="arrow" data-dir="0"></div>
+		
+		<div id="item-container">
+			<div class="food-panels">
+				<ul class="item-list drinks" id="list-drinks">
+					<li class="breakfast" data-food="cookies" data-category="drinks" data-carbo="12" data-lipids="5" data-protein="8"></li>
+				</ul>
+				
+				<ul class="item-list fruits" id="list-fruits">
+							<li class="breakfast" data-food="banana" data-category="fruits" data-carbo="12" data-lipids="5" data-protein="8"></li>
+							<li class="meal breakfast" data-food="bread" data-category="lipids" data-carbo="12" data-lipids="5" data-protein="8"></li>			
+					
+				</ul>	
+				
+				<ul class="item-list veggies" id="list-veggies">
+					<li class="breakfast meal" data-food="milk" data-category="veggies" data-carbo="12" data-lipids="5" data-protein="8"></li>
+					<li class="breakfast meal" data-food="eggs" data-category="veggies" data-carbo="12" data-lipids="5" data-protein="8"></li>
+					<li class="breakfast" data-food="orange" data-category="veggies" data-carbo="12" data-lipids="5" data-protein="8"></li>
+					<li class="breakfast" data-food="tea" data-category="" data-carbo="12" data-lipids="5" data-protein="8"></li>
+					<li class="breakfast" data-food="cherry" data-category="veggies"></li>
+					<li class="meal" data-food="burger" data-category="veggies" data-carbo="12" data-lipids="5" data-protein="8"></li>
+					<li class="meal" data-food="chicken" data-category="veggies" data-carbo="12" data-lipids="5" data-protein="8"></li>
+				</ul>
+				
+				<ul class="item-list snacks" id="list-snacks">
+					<li class="breakfast" data-food="cookies" data-category="snacks" data-carbo="12" data-lipids="5" data-protein="8"></li>
+				</ul>
+			</div>
+			<div class="food-tabs">
+				<div class="food-tab" data-category="drinks">
+					<a data-target="list-drinks"> Drinks </a>
+				</div>
+				<div class="food-tab" data-category="fruits">
+					<a data-target="list-fruits">Fruits</a>
+				</div>
+				<div class="food-tab" data-category="veggies">
+					<a data-target="list-veggies">Veggies</a>
+				</div>
+				<div class="food-tab" data-category="snacks">
+					<a data-target="list-snacks">Snacks</a>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<!-- meal confirmed -->	
+	<div data-role="page">
 		<div id="progress">
 			<div>
 				<div class="progress-container">
@@ -61,54 +114,10 @@
 				<span class="progress-type">protein</span>
 			</div>
 		</div>	
+		
 	</div>
-	<!-- End Of main -->
-	
-	<div class="list">
-	<!-- left arrow -->
-		<div id="left" class="arrow" data-dir="0"></div>
-		
-		<div id="item-container">
-			<div class="food-panels">
-				<ul class="item-list lipids" id="list-lipids">
-					<li class="breakfast" data-food="cookies" data-category="lipids" data-carbo="12" data-lipids="5" data-protein="8"></li>
-
-				</ul>
-				<ul class="item-list carbo" id="list-carbo">
-							<li class="breakfast" data-food="banana" data-category="carbo" data-carbo="12" data-lipids="5" data-protein="8"></li>
-							<li class="meal breakfast" data-food="bread" data-category="lipids" data-carbo="12" data-lipids="5" data-protein="8"></li>			
-					
-				</ul>	
-				<ul class="item-list protein" id="list-protein">
-				
-					<li class="breakfast meal" data-food="milk" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
-		
-					<li class="breakfast meal" data-food="eggs" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
-					<li class="breakfast" data-food="orange" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
-					<li class="breakfast" data-food="tea" data-category="" data-carbo="12" data-lipids="5" data-protein="8"></li>
-					<li class="breakfast" data-food="cherry" data-category="protein"></li>
-					<li class="meal" data-food="burger" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
-					<li class="meal" data-food="chicken" data-category="protein" data-carbo="12" data-lipids="5" data-protein="8"></li>
-			
-				</ul>
-			</div>
-			<div class="food-tabs">
-				<div class="food-tab" data-category="lipids">
-					<a data-target="list-lipids"> Lipids </a>
-				</div>
-				<div class="food-tab" data-category="protein">
-					<a data-target="list-protein">Protein</a>
-				</div>
-				<div class="food-tab" data-category="carbo">
-					<a data-target="list-carbo">Carbo</a>
-				</div>
-			</div>
-		</div>
-	</div>
-		
 	
 	
-
 
 
 </body>
