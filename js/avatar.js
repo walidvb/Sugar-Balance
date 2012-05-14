@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    var $avatars = $('.item-list li');
+    var $avatars = $('.item-list a');
     var $list = $(".list");
-    
+    var $all = $('.avatars-page');
     
     //fill with images
     $avatars.each(function(){
@@ -17,7 +17,7 @@ $(document).ready(function(){
     var $trigger = $('.tab, .tab-close');
     
     $trigger.click(function(){
-    	$list.toggleClass('show-list');
+    	$all.toggleClass('show-list');
     });
 
 	$avatars.click(function(){

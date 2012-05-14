@@ -3,10 +3,10 @@
 <html>
     <head>
     <title></title>
-    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, maximum-scale=1.0, minimum-scale=1.0">
     
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" /> -->
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
     <script type="text/javascript" src="js/scripts.js"></script>
      <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script> 
     <script type="text/javascript" src="js/jquery.mobiledragdrop.js"></script>
@@ -21,56 +21,65 @@
 <body class="avatars-page"> 
 
 	<!-- Main section -->
-	<div id="main">
+	<div id="main" data-role="content">
 		<div class="bubble">
-		<p class="text"> Hey ho a man's gotta do what a man's gotta do!!
+			<span class="text"> Hey ho a man's gotta do what a man's gotta do!!</span>
 		</div>
+		<div class="speaker"></div>
+		<div clas="indic">
+			<div class="sugar"><div class="level"></div></div>
+			<div class="act-meter"></div>
+		</div>
+
 		<div id="avatar" style="background-image: url(img/avatars/happy.png);">
+
+		</div>
+		
+		
+		<div class="quick-links">
+			<a class="tel qlink" href="tel:+41221234567">
+			tel
+			</a>
+			<a class="qlink lunch">
+			lunch
+			</a>
+			<a class="puzzle qlink" href="">
+			puzzle
+			</a>
 		</div>
 	</div>
 	
 	
 	
-		<div class="list">
-			<div class="trigger">
-				<div class="tab"></div>
-				<div class="tab-close"></div>
-			</div>
-			<div id="item-container">
-				<ul class="item-list avatar-list">
-					<li data-avatar="angry">
-						<span class="avatar-text">You really did bad, Annie!!</span>
-					</li>
-					<li data-avatar="cook">
-						<span class="avatar-text">Let's get something to eat!</span>
-					</li>
-					<li data-avatar="doctor">
-						<span class="avatar-text">What up doc'?</span>
-					</li>
-					<li data-avatar="meal" data-target="meal.html">
-						<span class="avatar-text">Let's get somethin' cookin'!</span>
-					</li>
-					<li data-avatar="rope">
-						<span class="avatar-text">Wanna go play for a bit?</span>
-					</li>
-					<li data-avatar="shot">
-						<span class="avatar-text">Annie, before you feel too bad, get a shot!</span>
-					</li>
-					<li data-avatar="sick">
-						<span class="avatar-text">Are you feeling ok? I feel like it's time for a check...</span>
-					</li>
-					<li data-avatar="sleep">
-						<span class="avatar-text">Yes, I'm tired, too..!</span>
-					</li>
-					<li data-avatar="snack">
-						<span class="avatar-text">SNACK-TIME!</span>
-					</li>
-					<li data-avatar="sport">
-						<span class="avatar-text"></span>
-					</li>
+	<div class="list">
+		<div class="confirm">
+			<div class="yes"></div>
+			<div class="no"></div>
+		</div>
+		<div class="trigger">
+			<div class="tab"></div>
+			<div class="tab-close"></div>
+		</div>
+		<div id="item-container">
+			<ul class="item-list avatar-list">
 
-				</ul>
-			</div>
+					<a data-avatar="cook" class="list-link" href="meal.html">
+						<span class="avatar-text">Let's get something to eat!</span>
+					</a>
+
+					<a data-avatar="doctor" class="list-link" href="sport.html">
+						<span class="avatar-text">What up doc'?</span>
+					</a>
+
+					<a  data-avatar="rope" class="list-link" href="sport.html">
+						<span class="avatar-text">Wanna go play for a bit?</span>
+					</a>
+
+					<a data-avatar="shot" class="list-link" href="measurement.html">
+						<span class="avatar-text">Annie, before you feel too bad, get a shot!</span>
+					</a>	
+			</ul>
+		</div>
 		
 		</div>
 	</div><!-- /page -->

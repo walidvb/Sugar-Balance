@@ -8,8 +8,10 @@
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" /> -->
     <script type="text/javascript" src="js/scripts.js"></script>
-     <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script> 
+    <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script> 
     <script type="text/javascript" src="js/jquery.mobiledragdrop.js"></script>
+    <script type="text/javascript" src="js/tipsy/jquery.tipsy.js"></script> 
+    <link rel="stylesheet" href="js/tipsy/tipsy.css" />
     <link rel="stylesheet" href="styles.css" />
 
 	<!-- page specific css/js -->
@@ -22,7 +24,7 @@
 <body> 
 
 	<!-- Main section -->
-	<div id="main">
+	<div id="main" data-role="page">
 		<div class="title rotator">
 			<div class="meal">Meal</div>
 			<div class="breakfast"> Breakfast</div>
@@ -73,7 +75,7 @@
 
 				</ul>
 				<ul class="item-list carbo" id="list-carbo">
-							<li class="breakfast" data-food="banana" data-category="carbo" data-carbo="12" data-lipids="5" data-protein="8"></li
+							<li class="breakfast" data-food="banana" data-category="carbo" data-carbo="12" data-lipids="5" data-protein="8"></li>
 							<li class="meal breakfast" data-food="bread" data-category="lipids" data-carbo="12" data-lipids="5" data-protein="8"></li>			
 					
 				</ul>	
@@ -98,7 +100,7 @@
 					<a data-target="list-protein">Protein</a>
 				</div>
 				<div class="food-tab" data-category="carbo">
-					<a data-target="list-carbo">Carbohydrates</a>
+					<a data-target="list-carbo">Carbo</a>
 				</div>
 			</div>
 		</div>

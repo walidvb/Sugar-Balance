@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	$('body').height(window.innerHeight);
 	var arrow = $('.arrow');
 	var listContainer = $('#item-container');
 	var list = $('.item-list');
