@@ -3,6 +3,7 @@ $(document).ready(function(){
     var $foodItem = $('.item-list li');
     var $listContainer = $("#item-container");
     var $plate = $('#plate');
+    var $count = 0;
     //set image to each food item
     
     $foodItem.each(function(){
@@ -24,7 +25,7 @@ $(document).ready(function(){
 			'left': newPos+'%',
 		});   	
 
-   	*/
+   	
    	});
    	
         //		change meal
@@ -45,29 +46,36 @@ $(document).ready(function(){
 	});
 	
 	
-	$foodItem.tipsy({
-		live: true,
-		html: true,
-		gravity: 'n',
-		delayOut: 1000,
-		trigger: manual,
-		title: function(){
-				return 'asd';
-			},
-	});
-	
 	//				update plate
+
+	
 	function addToPlate(foodItem, category){					
 				$plate.children("."+category).append(foodItem);
 				foodItem.addClass("served");
+				$count+=1;
+				if($count>0)
+				{
+					$('#main').addClass('ready');
+				}
 	};
 	
 	function removePlate(foodItem){
 				var category = foodItem.data("category");
 				foodItem.removeClass('served');
+				console.log(category);
 				$('#list-'+category).append(foodItem);
-				
+				$count-=1;
+				if($count<=0)
+				{
+					$('#main').removeClass('ready');
+				}
 	};
+
+function confDel(foodItem){
+
+	foodItem.addClass('readyToDelete');
+	
+}
 	
 	var proteinProgress = $("#protein");
 	var lipidsProgress = $("#lipids");
@@ -126,9 +134,14 @@ $(document).ready(function(){
 	
 	$foodItem.click(function(){
 		var category = $(this).data("category");
-		if($(this).hasClass("served"))
+		if($(this).hasClass('readyToDelete'))
 		{
+			$(this).removeClass('readyToDelete');
 			removePlate($(this));
+		}
+		else if($(this).hasClass("served"))
+		{
+			confDel($(this));
 			changeProgress($(this), 0);
 		}
 		else 
